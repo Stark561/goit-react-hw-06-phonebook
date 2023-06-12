@@ -1,16 +1,26 @@
-export const App = () => {
+import React from 'react';
+
+import Title from './Title/Title';
+import ContactForm from './ContactForm/ContactForm';
+import ContactList from './ContactList/ContactList';
+import Filter from './Filter/Filter';
+import { useSelector } from 'react-redux';
+
+export function App() {
+  const { contacts } = useSelector(state => state);
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className="form">
+      <Title text="Phonebook" />
+      <ContactForm />
+
+      {contacts[0] && (
+        <>
+          <Title text="Contacts" />
+          <Filter />
+          <ContactList />
+        </>
+      )}
     </div>
   );
-};
+}

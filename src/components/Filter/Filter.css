@@ -1,0 +1,10 @@
+.leb {
+    margin: 10px;
+    color: #1e1f1a;
+  }
+  
+  .filter {
+    border: 1px solid #61d35d;
+    border-radius: 15px;
+    padding: 8px 12px;
+  }

@@ -1,0 +1,38 @@
+.list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .buttonList {
+    height: 30px;
+    background-color: #dd8b8b;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 1px solid #f88686;
+    margin-left: 10px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .buttonList:hover{
+    background-color: #ac6666;
+  }
+  
+  li {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #1a1a1a;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #adadad;
+  }
+
+  li:hover{
+    background-color: #9b9b9b;
+  }
+  
+  .name {
+    font-weight: 700;
+  }
